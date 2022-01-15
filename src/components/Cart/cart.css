@@ -1,0 +1,225 @@
+.cart-body {
+    width: 88vw;
+    height: fit-content;
+    margin: 16vh auto 16vh auto;
+}
+
+#cart-title {
+    text-align: center;
+}
+
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 2em auto 0 auto;
+    grid-gap: 4rem;
+}
+
+.cart-item-div {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    grid-gap: 1em;
+}
+
+#cart-pic {
+    width: 41vw;
+    height: auto;
+}
+
+.cart-item-page {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+}
+
+#order-title {
+    text-align: center;
+}
+
+.totals {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+#cart-description {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    grid-gap: 0.4em;
+    align-self: center;
+}
+
+.checkout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout {
+    text-align: center;
+    width: 25vw;
+    height: 3.5vh;
+    border: none;
+    border-radius: 23pt;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.exit-flex {
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#line {
+    border-bottom: 2px white solid;
+    margin: 0.7em auto 1em auto;
+}
+
+.pricing {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+/* LANDSCAPE */
+@media only screen 
+  and (orientation: landscape){
+    .cart-page {
+        flex-direction: row;
+        justify-content: space-between;
+        grid-gap: 0;
+        width: 72vw;
+        margin: 6vh auto 0vh auto;
+    }
+    .cart-items {
+        justify-content: left;
+    }
+    #cart-pic {
+        width: 13vw;
+    }
+    .totals {
+        height: fit-content;
+        flex-direction: column;
+        width: fit-content;
+        margin-top: 2em;
+        align-items: flex-start;
+    }
+    .pricing {
+        text-align: left;
+        width: 100%;
+    }
+    #line {
+        border-bottom: 2px white solid;
+        margin: 1.3em auto 1.8em auto;
+    }
+  }
+
+
+/* 900 Small Screen  ------------------------------------------------------------------------------*/
+
+@media only screen
+    and (max-height: 900px)
+    and (max-width: 1023px){
+        #cart-title {
+            text-align: center;
+        }
+        #line {
+            border-bottom: 2px white solid;
+            margin: 0.7em auto 1em auto;
+        }
+    }
+
+/* Ipad  ---------------------------------------------------------------------------------------*/
+@media only screen 
+    and (min-device-width: 481px) 
+    and (max-device-width: 1024px) 
+    and (orientation:portrait){
+        .cart-body {
+            width: 100vw;
+            margin: 11vh auto 9vh auto;
+        }
+        .cart-page {
+            display: flex;
+            flex-direction: row;
+            grid-gap: 4rem;
+            margin: 6vh auto 0 auto;
+        }
+        #line {
+            border-bottom: 3px white solid;
+        }
+        .checkout {
+            width: 100%;
+        }
+        .totals {
+            width: 34vw;
+            margin-top: 1vh;
+        }
+        #cart-pic {
+            width: 30vw;
+            height: auto;
+        }
+    }
+
+/* 1024 Laptop -------------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1024px)
+    and (max-width: 1439px){
+        #line {
+            border-bottom: 2px white solid;
+        }
+        .checkout {
+            width: 9vw;
+        }
+    }
+
+/* 1440 x 753 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1440px)
+    and (orientation: landscape) {
+        .cart-items {
+            justify-content: left;
+        }
+        #cart-description {
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing {
+            width: 16vw;
+        }
+        #line {
+            border-bottom: 2px white solid;
+        }
+        .checkout {
+            width: 90px;
+        }
+        .cart-body {
+            width: fit-content;
+        }
+        .exit-flex {
+            margin: 2em 0 0 2em;
+        }
+        .cart-page {
+            margin: 4vh auto 0vh auto;
+        }
+        
+    }
+
+@media screen 
+    and (min-width: 1920px) 
+    and (orientation: landscape){
+    }

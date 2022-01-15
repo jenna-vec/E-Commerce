@@ -1,0 +1,95 @@
+.about-page {
+    margin: 19vh auto 8vh auto;
+    width: 78vw;
+    height: fit-content;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    grid-gap: 1em;
+}
+
+.about-socials {
+    width: 28vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.about-socials > a > img {
+    height: 2.5vh;
+}
+
+/* 900 x 1023  --------------------------------------------------------------------------------*/
+@media only screen
+    and (max-height: 900px)
+    and (max-width: 1023px){
+        .about-page {
+            width: 78vw;
+            margin: 26vh auto 12vh auto;
+        }
+        .about-socials {
+            width: 25vw;
+        }
+    }
+
+/* Ipad  -------------------------------------------------------------------------------------*/
+@media only screen 
+    and (min-device-width: 481px) 
+    and (max-device-width: 1024px) 
+    and (orientation:portrait){
+        .about-page {
+            width: 55vw;
+        }
+        .about-socials {
+            width: 16vw;
+        }
+        .about-socials > a > img {
+            height: 2vh;
+        }
+    }
+
+/* 1024 Laptop -----------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1024px)
+    and (max-width: 1439px){
+        .about-page {
+            width: 35vw;
+            margin: 31vh auto 20vh auto;
+        }
+        .about-socials {
+            width: 9vw;
+        }
+        .about-socials > a > img {
+            height: 2vh;
+        }
+    }
+
+/* 1440 x 753 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1440px)
+    and (orientation: landscape) {
+        .about-page {
+            margin: 22vh auto 23vh auto;
+            width: 30vw;
+        }
+        .about-socials {
+            width: 8vw;
+        }
+        .about-socials > a > img {
+            height: 2.7vh;
+        }
+    }
+
+/* 1920 x 1080 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-device-width: 1920px)
+    and (orientation: landscape){
+        .about-page {
+            margin: 25vh auto 11vh auto;
+            width: 27vw;
+        }
+        .about-socials > a > img {
+            height: 2.1vh;
+        }
+    }

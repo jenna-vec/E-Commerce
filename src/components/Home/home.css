@@ -1,0 +1,176 @@
+.main {
+    height: 65vh;
+    overflow: hidden;
+    background-image:url(./photos/background.jpg);
+    background-size: cover;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 3vh;
+}
+
+.main-title {
+    height: unset;
+    margin-top: 28vh;
+    font-weight: 500;
+}
+
+.index-page {
+    height: 100%;
+}
+
+/* Bubble */
+
+#floaty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.6rem 1.3rem;
+    margin: auto;
+    max-height: 85px;
+    max-width: 390px;
+    background: rgba( 193, 186, 206, 0.2 );
+    border-radius: 113px;
+    box-shadow: 5px 5px 11px 0 rgb(77 52 86 / 27%);
+    backdrop-filter: blur(42px);
+    z-index: 3;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* Carousel */
+
+#carousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: scroll;
+    height: 26vh;
+    margin: 11vh 5vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#carousel > img {
+    height: 100%;
+    object-fit: contain;
+    margin-right: 5vw;
+}
+
+
+#carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Landscape */
+/*---------------------------------------------------------------*/
+@media only screen
+    and (orientation: landscape) {
+    .main {
+        height: 100vh;
+    }
+    .main-title {
+        margin-top: 35vh;
+    }
+    #floaty {
+        max-height: unset;
+        max-width: unset;
+        padding: 0.5rem 1rem;
+        box-shadow: 4px 5px 17px 0 rgb(77 52 86 / 27%);
+    }
+    #carousel {
+        height: 42vh;
+    }
+}
+
+/* iPhone 5/SE -----------------------------------*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (device-aspect-ratio: 40/71)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      #floaty {
+        padding: 0.8rem 1rem;
+      }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-height: 896px) 
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait){
+      /* Just in Case */
+  }
+
+/*----------------------------------------------------------------------------------------------*/
+/* Ipad  ---------------------------------------------------------------------------------------*/
+@media only screen 
+    and (min-device-width: 481px) 
+    and (max-device-width: 1024px) 
+    and (orientation:portrait) {
+        #floaty {
+            max-height: unset;
+            max-width: unset;
+        }
+        #carousel {
+            height: 31vh;
+        }
+        #tee-name {
+            width: 23%;
+            padding-bottom: 3%;
+        }
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* 1024 Laptop -------------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1024px)
+    and (max-width: 1439px) {
+        #carousel {
+            height: 48vh;
+        }
+        #floaty {
+            max-height: unset;
+            max-width: unset;
+        }
+}
+
+
+/* 1440 x 753 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1440px)
+    and (orientation: landscape) {
+        .main {
+            height: 97vh;
+            overflow: hidden;
+        }
+        #carousel {
+            height: 57vh;
+        }
+        #floaty {
+            max-height: unset;
+            max-width: unset;
+            box-shadow: 5px 5px 17px 0 rgb(77 52 86 / 27%);
+        }
+        .new-shirt {
+            width: 67%;
+            margin: 17vh auto 9vh auto;
+        }
+}
+
+/* 1920 x 1080 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-device-width: 1920px)
+    and (orientation: landscape){
+        /*just in case*/
+
+}

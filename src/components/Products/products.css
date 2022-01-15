@@ -1,0 +1,363 @@
+
+.sort-drop-down {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    width: fit-content;
+    cursor: pointer;
+    height: 3.8vh;
+    border: 0.1rem solid white;
+    border-radius: 13pt;
+    padding: 0 14px;
+}
+
+.sort-drop-down:hover {
+    background-color: rgba(255, 255, 255, 0.2);    
+}
+
+.product-main {
+    height: fit-content;
+    margin: 7em auto 5em auto;
+    width: fit-content;
+    max-width: 86vw;
+}
+
+.product-box {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 2em 0 3em 0;
+    justify-content: space-between;
+    grid-gap: 1em;
+}
+
+.products-listing {
+    justify-content: center;
+    width: 39vw;
+    height: fit-content;
+    cursor: pointer;
+    text-align: center;
+}
+
+.list-image {
+    width: 39vw;
+    margin-bottom: 1em;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.8rem;
+}
+
+.item-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4em;
+    grid-gap: 2em;
+}
+
+.product-feature {
+    align-self: center;
+}
+
+.product-image {
+    width: 76vw;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 31vh;
+    margin: 0 10vw;
+}
+
+.addToCart {
+    margin-top: 0.9rem;
+}
+
+#size-options, .add-button {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    width: 50%;
+    height: 3.5vh;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: small;
+    font-weight: 500;
+}
+
+#size-options {   
+    background-color: unset;
+    color: white;
+}
+
+.add-button {
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(1px 6px 8px #975d83);
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.add-button:active {
+    box-shadow: 6px 6px 2px white;
+}
+
+.add-to-bag {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    white-space: nowrap;
+    justify-content: center;
+    margin-top: 1vh;
+    grid-gap: 3vw;
+}
+
+.small-text {
+    font-size: xx-small;
+}
+
+
+/* Landscape -------------------------------------------------------------------------------*/
+@media only screen 
+  and (orientation: landscape) {
+    .sort-drop-down  {
+        height: 3.6vh;
+        border-radius: 4pt;
+    }
+    .item-div {
+        flex-direction: row;
+        justify-content: center;
+        margin: 24vh auto 0 auto;
+        grid-gap: 2em;
+    }
+    .product-description {
+        text-align: left;
+        margin: 1em 0 0 0;
+        width: 28vw;
+    }
+    #size-options, .add-button {
+        border: 1.9px solid rgb(255, 255, 255);
+        border-radius: 7px;
+    }
+    .add-button:active {
+        box-shadow: 2px 2px 4px white;
+    }
+    .add-to-bag {
+        grid-gap: 1vw;
+    }
+    .product-box {
+        grid-gap: 3em;
+    }
+    .product-image {
+        width: 35vw;
+    }
+    .products-listing {
+        width: 23vw;
+    }
+    .list-image {
+        width: 23vw;
+    }
+}
+
+/* Iphone 11 */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+        .product-description {
+            height: 24vh;
+        }
+     }
+
+/* Samsung Galaxy A51 */
+@media only screen 
+and (device-width: 412px) 
+and (device-height: 914px) 
+and (-webkit-min-device-pixel-ratio: 2.625) {
+    #size-options, .add-button {
+        border: 1px solid rgb(255, 255, 255);
+    }
+ }
+
+
+
+/* 900 Small Screen  ------------------------------------------------------------------------------*/
+
+@media only screen
+    and (max-height: 900px)
+    and (max-width: 1023px) {
+        .product-box {
+            grid-row-gap: 2vw;
+            grid-column-gap: 4vw;
+            margin: 3em 0 0.5em 0;
+        }
+        .sort-drop-down {
+            border-radius: 3pt;
+            height: 1vh;
+            min-height: 28px;
+            padding: 0 5px;
+        }
+        .products-listing {
+            margin: 0 0 3vh 0;
+        }
+        .item-div {
+            margin-bottom: 1em;
+        }
+        #size-options, .add-button {
+            border: 1.9px solid rgb(255, 255, 255);
+            border-radius: 7px;
+        }
+    }
+
+/* Ipad  ---------------------------------------------------------------------------------------*/
+@media only screen 
+    and (min-device-width: 481px) 
+    and (max-device-width: 1024px) 
+    and (orientation:portrait) {
+        .product-main {
+            margin: 8em auto 5em auto;
+            max-width: 86vw;
+        }
+        .sort-drop-down {
+            border-radius: 3pt;
+            height: 2.5vh;
+            padding: 0 3px;
+        }
+        .products-listing {
+            margin: 0;
+            width: 27vw;
+        }
+        .product-box {
+            margin: 3em 0 4em 0;
+        }
+        .product-image {
+            width: 45vw;
+        }
+        .item-div {
+            flex-direction: row;
+            justify-content: center;
+            margin: 15vh 0 11vh 0;
+            grid-gap: 1em;
+        }
+        .product-description {
+            text-align: left;
+            margin: 3vh 0 0 0;
+            width: 30vw;
+            height: 21vh;
+            gap: 1rem;
+        }
+        .list-image {
+            width: 27vw;
+        }
+        #size-options, .add-button {
+            border: 1.5px solid rgb(255, 255, 255);
+            border-radius: 7px;
+            height: 2.5vh;
+        }
+    }
+
+/* 1024 Laptop -------------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1024px)
+    and (max-width: 1439px) {
+        .sort-drop-down {
+            height: 3.5vh;
+            border-radius: 4pt;
+            padding: 0 4px;
+        }
+        .product-box {
+            margin: 2em 0 1em 0;
+        }
+        .product-description {
+            text-align: left;
+            margin: 2vh 0 0 0;
+        }
+        .item-div {
+            width: 64vw;
+            margin: 0 auto;
+            grid-gap: 1em;
+        }
+        #size-options, .add-button {
+            border: 1.9px solid rgb(255, 255, 255);
+            border-radius: 7px;
+        }
+        .product-image {
+            width: 37vw;
+        }
+    }
+
+/* 1440 x 753 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-width: 1440px)
+    and (orientation: landscape) {
+        .product-main {
+            margin: 10em auto 9em auto;
+            max-width: 80vw;
+        }
+        .product-box {
+            margin: 5vh 0 0 0;
+            grid-gap: 3em;
+        }
+        .sort-drop-down {
+            height: 3.5vh;
+            border-radius: 3pt;
+            padding: 0 1px;
+        }
+        .products-listing {
+            margin: 0;
+            width: 17vw;
+        }
+        .list-image {
+            width: 17vw;
+            margin-bottom: 2vh;
+        }
+        .product-image {
+            width: 26vw;
+        }
+        .product-description {
+            text-align: left;
+            margin: 4vh 0 0 0;
+            width: 20vw;
+        }
+        .item-div {
+            flex-direction: row;
+            width: 60vw;
+            grid-gap: 4em;
+            height: 40vh;
+        }
+        #size-options, .add-button {
+            border: 1.9px solid rgb(255, 255, 255);
+            border-radius: 7px;
+        }
+}
+
+/* 1920 x 1080 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-device-width: 1920px)
+    and (orientation: landscape){
+        .product-description {
+            height: 68%;
+            width: 15vw;
+        }
+        .product-image {
+            width: 21vw;
+        }
+        #size {
+            width: 2.6vw;
+            height: 1.8vh;
+        }
+        .product-box {
+            margin: 1em 0;
+        }
+        .sort-drop-down  {
+            height: 26px;
+            border-radius: 6pt;
+            margin: 0 0 3vh 0;
+        }
+        .products-listing {
+            width: 17vw;
+        }
+        .list-image {
+            width: 17vw;
+        }
+    }

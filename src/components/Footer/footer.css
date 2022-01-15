@@ -1,0 +1,405 @@
+.foot {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+.subscribe-email {
+    width: 64vw;
+    height: 4vh;
+    position: relative;
+    margin: 0 auto 9vh auto;
+}
+
+#newsletter-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+#subscribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 3vh;
+}
+
+#newsletter-input {
+    height: 100%;
+    width: 38vw;
+    border-radius: 9pt;
+    text-indent: 5%;
+}
+
+.submit-button {
+    width: 15vw;
+    height: 100%;
+    border-radius: 9pt;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.submit-button:hover {
+    background-color: rgba(255, 255, 255, 0.6);    
+}
+
+.submit-button:active {
+    background-color: rgb(85 67 99, 0.4);
+    box-shadow: 8px 20px 32px 0 rgb(77 52 86 / 27%);
+}
+
+
+/* Accordion Navigation */
+
+.accordion {
+    width: 57vw;
+    position: relative;
+    margin: 2rem auto;
+    box-sizing: border-box;
+}
+
+.accordion-title {
+    cursor: pointer;
+    border-bottom: 0.2rem solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 8px 0.7rem 8px;
+    color: white;
+}
+
+.accordion-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 0.7rem 8px;
+}
+
+.accordion-content > p {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Social Media Buttons */
+
+.socials {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 56vw;
+    height: 4%;
+    margin: 0 auto;
+    padding: 8% 0;
+}
+
+.socials > img {
+    height: 5vw;
+    cursor: pointer;
+}
+
+
+/* Copywright */
+
+.copy {
+    width: 60vw;
+    text-align: center;
+    height: fit-content;
+}
+
+.footer {
+    width: 100%;
+    height: 6vh;
+    padding: 8vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20%;
+    background-color: rgba(77, 42, 56, 0.1);
+    box-shadow: 0 0 18px 8px rgb(255 255 255 / 30%);
+}
+
+.footer-name {
+    font-weight: 600;
+}
+
+.copy > p {
+    font-size: x-small;
+}
+
+
+/* Landscape ---------------------------------------------------------------*/
+@media only screen 
+  and (orientation: landscape) {
+    .subscribe-email {
+        margin: 16% auto 10% auto;
+        width: 39vw;
+    }
+    #newsletter-input {
+        width: 25vw;
+    }
+    .submit-button {
+        width: 9vw;
+    }
+    .copy {
+        width: 28vw
+    }
+    .socials {
+        padding: 1rem 0 7rem 0;
+    }
+    .footer {
+        height: 7vh;
+    }
+  }
+
+/* 900 Small Screen */
+@media only screen
+    and (max-height: 900px)
+    and (max-width: 1023px) {
+        .socials {
+            width: 23vw;
+            height: 3vh;
+            min-width: 251px;
+            padding: 1rem 0 4rem 0;
+        }
+        .socials > img {
+            height: 2vw;
+            min-height: 18px;
+        }
+        .copy {
+            width: 31vw;
+            min-width: 234px;
+            margin: 0 auto;
+        }
+        #subscribe-form {
+            height: 3.5vh;
+        }
+        .subscribe-email {
+            width: 32vw;
+            min-width: 271px;
+            height: 5vh;
+            margin: 1vh auto 10vh auto;
+        }
+        #newsletter-input {
+            width: 21vw;
+            min-width: 175px;
+            max-width: 188px;
+            border-radius: 4pt;
+        }
+        .submit-button {
+            width: 9vw;
+            min-width: 57px;
+            border-radius: 4pt;
+        }
+        .accordion {
+            width: 33vw;
+            min-width: 263px;
+        }
+        .accordion-title {
+            border-bottom: 2px solid;
+        }
+        .footer {
+            height: 6vh;
+            padding: 9vh 0;
+        }
+    }
+
+/* Ipad */
+@media only screen 
+    and (min-device-width: 481px) 
+    and (max-device-width: 1024px) 
+    and (orientation:portrait) {
+
+        .subscribe-email {
+            width: 36vw;
+            height: 3vh;
+        }
+        #newsletter-input {
+            border-radius: 5pt;
+            width: 23vw;
+        }
+        #subscribe-form {
+            height: 2.7vh;
+        }
+        .submit-button {
+            border-radius: 5pt;
+            width: 9vw;
+        }
+        /* Accordion */
+        .accordion {
+            width: 34vw;
+        }
+        .accordion-title {
+            border-bottom: 2px solid;
+        }
+        .accordion-title, .accordion-content {
+            padding: 0.9rem 8px 0.7rem 8px;
+        }
+        /* Footer */
+        .bw-logo {
+            height: 78%;
+        }
+        .socials {
+            width: 32vw;
+            padding: 3vh 0 6vh 0;
+        }
+        .socials > img {
+            height: 2vw;
+        }
+        .copy {
+            width: 35vw;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            height: 5vh;
+        }
+}
+
+/* 1024 Laptop */
+@media screen 
+    and (min-width: 1024px)
+    and (max-width: 1439px) {
+        #newsletter-input {
+            border-radius: 5pt;
+            width: 18vw;
+        }
+        .submit-button {
+            border-radius: 5pt;
+            width: 7vw;
+        }
+        .subscribe-email {
+            width: 28vw;
+            height: 4.5vh;
+            margin: 8% auto 8% auto;
+        }
+        .socials {
+            width: 24vw;
+            height: 3vh;
+            margin: 1vh auto 5vh auto;
+            padding: 5% 0;
+        }
+        .socials > img {
+            height: 1.7vw;
+        }
+        .copy {
+            width: 26vw;
+        }
+        .copy > p {
+            font-weight: 450;
+        }
+        .footer-logo {
+            height: 5vh;
+        }
+        .bw-logo {
+            height: 85%;
+        }
+        .accordion-title {
+            border-bottom: 2px solid;
+        }
+        .accordion {
+            width: 28vw;
+        }
+    }
+
+/* 1440 x 753 */
+@media screen 
+    and (min-width: 1440px)
+    and (orientation: landscape) {
+        .subscribe-email {
+            width: 20vw;
+            height: 4vh;
+            margin: 4px auto 68px auto;
+        }
+        #subscribe-form {
+            height: 4vh;
+        }
+        #newsletter-input {
+            width: 13vw;
+            border-radius: 4px;
+        }
+        .submit-button {
+            width: 5vw;
+            border-radius: 4px;
+        }
+        /* Accordion */
+        .accordion-title {
+            border-bottom: 2px solid;
+        } 
+        .accordion {
+            width: 20vw;
+            margin: 2% auto;
+        }
+        .accordion-title {
+            padding-top: 2rem;
+        }
+        .accordion-content {
+            padding: 1rem 10px;
+        }
+        /* Footer */
+        .footer {
+            gap: 10px;
+        }
+        .socials {
+            width: 19vw;
+            margin: 1vh auto 5vh auto;
+            padding: 1% 0 3% 0;
+        }
+        .socials > img {
+            height: 1vw;
+            min-height: 20px;
+        }
+        .copy {
+            width: 18vw;
+        }
+        .copy > p {
+            font-weight: 450;
+        }
+        .footer-logo {
+            height: 7vh;
+        }
+        .bw-logo {
+            height: 80%;
+        }
+        .footer-name {
+            font-weight: 600;
+        }
+    }
+
+/* 1920 x 1080 ---------------------------------------------------------------------------*/
+@media screen 
+    and (min-device-width: 1920px)
+    and (orientation: landscape){
+        /*Footer*/
+        .subscribe-email {
+            width: 17vw;
+            margin: 1vh auto 7vh auto;
+        }
+        .accordion {
+            width: 17vw;
+        }
+        #newsletter-input {
+            width: 11vw;
+        }
+        .submit-button {
+            width: 3.7vw;
+        }
+        .socials {
+            width: 16vw;
+            height: 1vh;
+            margin: 1vh auto 6vh auto;
+            padding: 1% 0 2% 0;
+        }
+        .footer {
+            padding: 6vh 0;
+            height: 6vh;
+        }
+        .copy {
+            width: 16vw;
+        }
+        .bw-logo {
+            height: 80%;
+            object-fit: contain;
+        }
+}
