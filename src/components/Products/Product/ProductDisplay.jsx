@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom'
-import { commerce } from '../../../library/commerce';
 import '../products.css';
 
 
-const ProductDisplay = () => {
+const ProductDisplay = ({onAddToCart}) => {
     
-    const location = useLocation()
+    const location = useLocation();
     const { product } = location.state;
 
     const variantId = product.variant_groups[0].id;
@@ -20,8 +19,8 @@ const ProductDisplay = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        commerce.cart.add(id, 1, {[variantId]: itemSize});
-      }
+        onAddToCart(id, 1, {[variantId]: itemSize});
+    }
 
     return (
         <div className="product-main single-item">
@@ -51,7 +50,7 @@ const ProductDisplay = () => {
                 </div>
             </div>
         </div>
-  );
+    );
 };
 
 export default ProductDisplay;
