@@ -19,14 +19,15 @@
 .cart-item-div {
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     align-self: center;
+    justify-content: space-between;
     grid-gap: 1em;
 }
 
 #cart-pic {
-    width: 41vw;
+    width: 28vw;
     height: auto;
 }
 
@@ -45,12 +46,13 @@
     display: flex;
     flex-direction: column;
     width: 80vw;
+    align-self: center;
 }
 
 #cart-description {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 10em;
     height: fit-content;
     grid-gap: 0.4em;
     align-self: center;
@@ -89,6 +91,13 @@
     margin-bottom: 2em;
 }
 
+.order-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 3em;
+}
+
 .empty-cart {
     display: flex;
     flex-direction: column;
@@ -109,6 +118,12 @@
     .cart-items {
         justify-content: left;
     }
+    #cart-description {
+        align-self: flex-start;
+    }
+    .exit-flex {
+        margin-left: 2em;
+    }
     #cart-pic {
         width: 13vw;
     }
@@ -116,8 +131,8 @@
         height: fit-content;
         flex-direction: column;
         width: fit-content;
-        margin-top: 2em;
         align-items: flex-start;
+        align-self: flex-start;
     }
     .pricing {
         text-align: left;
@@ -156,21 +171,27 @@
         .cart-page {
             display: flex;
             flex-direction: row;
-            grid-gap: 4rem;
+            grid-gap: 6rem;
             margin: 6vh auto 0 auto;
         }
         #line {
             border-bottom: 3px white solid;
         }
         .checkout {
-            width: 100%;
+            width: 7em;
+            height: 2vh;
         }
         .totals {
-            width: 34vw;
+            width: 26vw;
             margin-top: 1vh;
+            align-items: flex-start;
+        }
+        .pricing {
+            text-align: left;
+            width: 100%;
         }
         #cart-pic {
-            width: 30vw;
+            width: 20vw;
             height: auto;
         }
     }
@@ -210,9 +231,6 @@
         .cart-body {
             width: fit-content;
         }
-        .exit-flex {
-            margin: 2em 0 0 2em;
-        }
         .cart-page {
             margin: 4vh auto 0vh auto;
         }
@@ -222,4 +240,7 @@
 @media screen 
     and (min-width: 1920px) 
     and (orientation: landscape){
+        .cart-item-page {
+            grid-gap: 5em;
+        }
     }
