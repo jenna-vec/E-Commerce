@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import React, { useState } from 'react';
 import './products.css';
 import Product from './Product/Product';
 
-const SearchResults = ({ products }) => {
+const SearchResults = ({ products  }) => {
 
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -39,7 +40,7 @@ const SearchResults = ({ products }) => {
         </form>
         <div className="product-box">
             {products.map((product) => (
-              <Product key={product.id} product={product}/>
+              <Product key={product.id} product={product} />
             ))}
         </div>
     </div>
