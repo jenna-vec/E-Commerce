@@ -47,7 +47,7 @@ const Footer = () => {
       <div className="footer">
         <Link to='/'><p className="footer-name">hi egg</p></Link>
         <div className="copy">
-          <p>The content of this site is copyright-protected and is the property of Jenna LeFort. These products are not for sale.</p>
+          <p>&#169; Hi Egg. All rights reserved.</p>
         </div>
       </div>
     </div>
