@@ -6,3 +6,4 @@ export { default as Products } from './Products/Products';
 export { default as SearchResults } from './Products/SearchResults';
 export { default as ProductDisplay } from './Products/Product/ProductDisplay';
 export { default as Cart } from './Cart/Cart';
+export { default as Checkout } from './Checkout/Checkout';
