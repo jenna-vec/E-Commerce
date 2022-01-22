@@ -134,6 +134,7 @@
         text-align: left;
         margin: 1em 0 0 0;
         width: 28vw;
+        grid-gap: 0.5em;
     }
     #size-options, .add-button {
         border: 1.9px solid rgb(255, 255, 255);
