@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import CartItem from './CartItem/CartItem';
 import './cart.css';
 
+
 const Cart = ({ cart, onRemoveFromCart }) => {
+
 
   const renderEmptyCart = () => (
     <>
@@ -28,11 +30,14 @@ const Cart = ({ cart, onRemoveFromCart }) => {
         <h4 id="order-title">Order Summary</h4>
         <div className="pricing">
           <div id="line"></div>
-          <p>{cart.subtotal.formatted_with_symbol}</p>
+          <div className='order-details'>
+            <p>subtotal</p>
+            <p>{cart.subtotal.formatted_with_symbol}</p>
+          </div>
         </div>
-        <div className="checkout-button">
-          <button className="checkout" /*component={Link} to="/checkout" size="large"*/ type="button">checkout</button>
-        </div>
+        <Link to="/checkout" className="checkout-button">
+          <button className="checkout" type="button">checkout</button>
+        </Link>
       </div>
     </>
   );
