@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/commercejs_hi_egg/static/css/main.bc9a1f76.chunk.css",
+    "main.js": "/commercejs_hi_egg/static/js/main.ca2e4d20.chunk.js",
+    "main.js.map": "/commercejs_hi_egg/static/js/main.ca2e4d20.chunk.js.map",
+    "runtime-main.js": "/commercejs_hi_egg/static/js/runtime-main.77ebaae0.js",
+    "runtime-main.js.map": "/commercejs_hi_egg/static/js/runtime-main.77ebaae0.js.map",
+    "static/js/2.47ca02f8.chunk.js": "/commercejs_hi_egg/static/js/2.47ca02f8.chunk.js",
+    "static/js/2.47ca02f8.chunk.js.map": "/commercejs_hi_egg/static/js/2.47ca02f8.chunk.js.map",
+    "index.html": "/commercejs_hi_egg/index.html",
+    "static/css/main.bc9a1f76.chunk.css.map": "/commercejs_hi_egg/static/css/main.bc9a1f76.chunk.css.map",
+    "static/js/2.47ca02f8.chunk.js.LICENSE.txt": "/commercejs_hi_egg/static/js/2.47ca02f8.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/commercejs_hi_egg/static/media/background.1a8f6328.jpg",
+    "static/media/black-tee.a3c5b9e6.jpg": "/commercejs_hi_egg/static/media/black-tee.a3c5b9e6.jpg",
+    "static/media/facebook.b8aacbd1.png": "/commercejs_hi_egg/static/media/facebook.b8aacbd1.png",
+    "static/media/github.f8aa63bc.svg": "/commercejs_hi_egg/static/media/github.f8aa63bc.svg",
+    "static/media/glasses-photo.a42062bf.jpg": "/commercejs_hi_egg/static/media/glasses-photo.a42062bf.jpg",
+    "static/media/linkedin.5d531422.svg": "/commercejs_hi_egg/static/media/linkedin.5d531422.svg",
+    "static/media/man-shirt.2e83d843.jpg": "/commercejs_hi_egg/static/media/man-shirt.2e83d843.jpg",
+    "static/media/pinterest.e5be5576.svg": "/commercejs_hi_egg/static/media/pinterest.e5be5576.svg",
+    "static/media/text-tee.74e40e37.jpg": "/commercejs_hi_egg/static/media/text-tee.74e40e37.jpg",
+    "static/media/twitter.b586498f.png": "/commercejs_hi_egg/static/media/twitter.b586498f.png",
+    "static/media/white-egg.9ab600d5.png": "/commercejs_hi_egg/static/media/white-egg.9ab600d5.png",
+    "static/media/white-t-car.a93d2be7.png": "/commercejs_hi_egg/static/media/white-t-car.a93d2be7.png",
+    "static/media/youtube.419c0d96.png": "/commercejs_hi_egg/static/media/youtube.419c0d96.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77ebaae0.js",
+    "static/js/2.47ca02f8.chunk.js",
+    "static/css/main.bc9a1f76.chunk.css",
+    "static/js/main.ca2e4d20.chunk.js"
+  ]
+}
