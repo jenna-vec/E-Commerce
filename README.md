@@ -2,7 +2,7 @@
 
 ### [visit the live site](https://hi-egg-8632b.web.app/)
 
-![This is an image](/public/background.png)
+![Homepage of Hi Egg](/public/background.png)
 
 #### Custom E-Commerce Store Using Commerce.js
 
