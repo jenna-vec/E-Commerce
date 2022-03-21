@@ -12,7 +12,6 @@ Open http://localhost:3000 to view it in the browser.
 The page will reload if you make edits.  
 You will also see any lint errors in the console.  
 
-
 **Functionality**  
 Hi Egg is a commerce demo store built with React, using Commerce.js and Stripe.   
 Products are imported from the Hi Egg Commerce.js using their API.   
